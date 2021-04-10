@@ -1,0 +1,99 @@
+.sidebar {
+    border-right: 1px solid var(--grey-dark-2);
+    grid-column: navbar-start / navbar-end;
+}
+
+.side {
+    &-nav {
+        margin: 3rem 0;
+        font-size: 1.6rem;
+        list-style: none;
+        font-weight: 400;
+        &-items {
+            &:not(:last-child) { margin-bottom: .5rem;}
+
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 3px;
+                transform: scaleY(0);
+                background-image: linear-gradient(to right, rgba(white,.7), rgba(#2766cc,.3));
+                -webkit-transform: scaleY(0);
+                -moz-transform: scaleY(0);
+                -ms-transform: scaleY(0);
+                -o-transform: scaleY(0);
+                transition: transform .2s,
+                width .4s cubic-bezier(1,0,0,1) .2s,
+                background-color .1s;
+            }
+            &:hover::before,
+            &--active::before{
+                transform: scaleY(1);
+                width: 100%;
+                color: var(--color-primary);
+                border-right: 3px solid var(--color-primary);
+            }
+            &:active::before {
+                background-color: var(--color-primary);
+            }
+        }
+        &-link {
+            &:link,
+            &:visited {
+                position: relative;
+                color: var(--grey-dark-1);
+                text-transform: capitalize;
+                text-decoration: none;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                padding: 1.3rem 5.5rem;
+            }
+
+            &:link,
+            &:active {
+                color: var(--color-primary);
+            }
+
+        }
+    }
+    &-navView {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        
+        &:link,
+        &:visited {
+                text-transform: capitalize;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                padding: 1.3rem 5.5rem;
+                color: #2766cc;
+                font-weight: 700;
+                
+            }
+        & > span {
+            transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+            &:hover {
+                margin-right: .6rem;
+            }
+        }
+    }
+    &-navLi {
+        margin-top: -1rem;
+        font-weight: 700;
+    }
+    &-nav-logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}

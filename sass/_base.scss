@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+    --color-primary: #2766cc;
+    --color-primary-dark:#173970;
+
+    --color-secondary: #f8de4b;
+
+    --color-grey-light-1: #f9f7f6;
+    --color-grey-light-2: #aaa;
+
+    --color-grey-dark-1: #54483a;
+    --color-grey-dark-2: #6d5d4b;
+
+    --color-dark: #1f1f1f;
+
+  --grey-light-1: #faf9f9;
+  --grey-light-2: #f4f2f2;
+  --grey-light-3: #f0eeee;
+  --grey-light-4: #ccc;
+
+  --grey-dark-1: #333;
+  --grey-dark-2: #777;
+  --grey-dark-3: #999;
+}
+//FONT-VARIABLE
+$font-variable: 1.4rem;
+$font-primary: 'nunito', sans-serif;
+$font-display: 'josefin sans', Sans-serif;
+$body-color: #292f3b;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--grey-light-2), var(--grey-light-4));
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--grey-dark-1);
+}
+
+.container {
+    max-width: 132rem;
+   margin: 2rem auto;
+    background-color: var(--grey-light-1);
+    min-height: 66rem;
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.4);
+}
+.content {
+    display: grid;
+    grid-template-columns: [navbar-start] 31rem [navbar-end mainbar-start] minmax(17rem, 1fr)  repeat(3, [bag-start] minmax(min-content, 13rem) [col-end]) [mainbar-end] minmax(6rem, 1fr) [bag-end];
+    margin-top: 2rem;
+    border-top: 1px solid var(--grey-dark-2);
+
+    min-height: 71vh;
+}

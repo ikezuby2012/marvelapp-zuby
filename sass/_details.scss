@@ -1,0 +1,169 @@
+.de {
+    &-text {
+        display: flex;
+        align-items: center;
+        margin: 2rem 85% 0 6.5rem;
+
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        &1 {
+            color: black;
+            margin-left: 1.5rem;
+            &:link,
+            &:active {
+                font-size: 1.9rem;
+                text-decoration: none;
+                font-weight: 400;
+                
+            }
+            &:hover {
+                color: var(--grey-light-1);
+            }
+        }
+        &:hover {
+            background-color: var(--color-primary);
+            padding: .2.5rem;
+            border-radius: 2rem;
+            
+        }
+    }
+    &-icon {
+        height: 3.5rem;
+        width: 3.5rem;
+        fill: var(--grey-dark-1);
+    }
+}
+.detail {
+    &-photo {
+        height: 40rem;
+        width: 45rem;
+        border: none;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+    }
+    &-section {
+        display: flex;
+        padding: 5rem 10rem;
+        border-top: 1px solid black;
+    }
+    &-img {
+        margin-right: 2rem;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+
+        &hd {
+            font-size: 1.9rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        &1 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: serif;
+            letter-spacing: .05rem;
+            word-spacing: .2rem;
+            color: var(--grey-dark-1);
+            margin-bottom: 3rem;
+        }
+    }
+    &-price {
+        display: flex;
+        align-items: center;
+        &1 {
+            font-size: 1.7rem;
+            color: var(--color-dark);
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-right: 9rem;
+        }
+        &2 {
+            padding: .2rem .4rem;
+            background-color: #ef3069;
+            border-radius: .4rem;
+            font-size: 1.2rem;
+            color: var(--grey-light-1)
+        }
+    }
+    &-disPrice {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        text-decoration: line-through;
+        color: var(--grey-dark-2);
+        margin-bottom: 2rem;
+    }
+    &-amt {
+        display: flex;
+        align-items: center;
+        border: 1px solid #c3d4f0;
+        width: 12%;
+        font-size: 1.8rem;
+        justify-content: space-between;
+        margin-bottom: auto;
+    }
+    &-button {
+        background-color: #e9eff9;
+        padding: 0.05rem 0.6rem;
+        color: #43474d;
+    }
+    &-btns {
+        
+        &1 {
+            border: 2px solid var(--color-primary);
+            padding: 0.5rem 4.5rem;
+            border-radius: .5rem;
+            margin-right: 1rem;
+            -webkit-border-radius: .5rem;
+            -moz-border-radius: .5rem;
+            -ms-border-radius: .5rem;
+            -o-border-radius: .5rem;
+            transition: all .3s;
+
+            &:link,
+            &:active {
+                color: var(--color-primary);
+                font-size: 1.5rem;
+                text-transform: capitalize;
+                text-decoration: none;
+            }
+            &:hover {
+                background-color: var(--color-primary);
+                color: var(--grey-light-1);
+            }
+        }
+
+        &2 {
+            background-color: var(--color-secondary);
+            padding: 0.5rem 4.5rem;
+            border-radius: .5rem;
+            margin-right: 1rem;
+            -webkit-border-radius: .5rem;
+            -moz-border-radius: .5rem;
+            -ms-border-radius: .5rem;
+            -o-border-radius: .5rem;
+            transition: all .3s;
+
+            &:link,
+            &:active {
+                color: var(--color-primary);
+                font-size: 1.5rem;
+                text-transform: capitalize;
+                text-decoration: none;
+            }
+            &:hover {
+                background-color: var(--color-primary);
+                color: var(--grey-light-1);
+            }
+            
+        }
+    }
+}

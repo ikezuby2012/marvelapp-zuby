@@ -1,0 +1,30 @@
+.products {
+    padding: 5rem 10rem;
+
+    &-hdtext {
+        color: var(--grey-dark-2);
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &-gallery {
+        display: flex;
+        overflow-x: scroll;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    }
+    &-img {
+        &:not(:last-child){margin-right: 1rem; }
+    }
+
+    &-photo {
+        height: 19rem;
+        width: 18rem;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+}
+}

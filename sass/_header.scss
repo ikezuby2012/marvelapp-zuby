@@ -1,0 +1,82 @@
+.header {
+    &-class{
+       background-color: var(--color-primary);
+       padding: 1rem;
+    }
+    &-text {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-left: 4rem;
+        font-family: inherit;
+        color: var(--grey-light-3);
+    }
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 90%;
+        margin: 2rem auto 0 auto;
+    }
+    &-target {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        &Box {
+            padding: 1.5rem;
+            background-color: var(--grey-light-4);
+            border-radius: 50%;
+            margin-right: 1.3rem;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+}
+        &Icon {
+            // font-size: 3.5rem;
+            height: 4rem;
+            width: 4rem;
+            fill: var(--grey-dark-3);
+        }
+        &-name {
+            font-size: 2.4rem;
+        }
+        &-address {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: var(--grey-dark-1);
+        }
+        &-box {
+
+        }
+
+    }
+    &-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &-box {
+            &:not(:last-child) {margin-right: 8rem;}
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &-mainIcon {
+            height: 1.9rem;
+            width: 1.9rem;
+            fill: var(--color-grey-light-2);
+            margin-right: 1.3rem;
+        }
+        h4 {
+            font-size: 1.4rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 1.3rem;
+            color: var(--grey-dark-1);
+        }
+    }
+}
