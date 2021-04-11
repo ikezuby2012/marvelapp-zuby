@@ -22,12 +22,14 @@ class Success extends Component {
                         </p>
                     </div>
                     <div className="detail-btns sc-btn">
-                        <Link className="sc-btn1" to="/" >track order</Link>
+                    <div className="detail-btns sc-btn">
+                        <Link className="sc-btn1" to="/target">track order</Link>
                         <Link className="sc-btn2" to="/" >continue Shopping</Link>
                     </div>
                 </div>
             </div>
+            </div>
         )      
     }
 }
-export default Success
+export default Success;
