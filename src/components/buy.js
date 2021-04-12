@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 import Header from "./Header";
 import Popup from "./Popup";
+import CodeInput from "./CodeInput";
 
 class Buy extends Component {
     constructor() {
@@ -86,7 +87,8 @@ class Buy extends Component {
                             {this.state.seen && <Popup content={
                                 <>
                                     <h1 className="ht">verify your phone number</h1>
-                                    <button onClick={() => this.toStage2()}>resend code</button>
+                                    <CodeInput />
+                                    <button className="by-account-nextbtn mt-4" onClick={() => this.toStage2()}>resend code</button>
                                 </>
                             } handleClose={this.togglePopup}/>}
 

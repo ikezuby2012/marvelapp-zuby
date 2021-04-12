@@ -185,7 +185,8 @@
       border-bottom-right-radius: .5rem;
       border-top-left-radius: .2rem;
       border-top-right-radius: .2rem;
-      padding: .8rem; }
+      padding: .8rem;
+      color: var(--grey-light-1); }
   .bag-icon {
     display: flex;
     flex-direction: column;
@@ -657,6 +658,10 @@
       background-color: var(--color-primary);
       color: var(--grey-light-1); }
 
+.codeInput {
+  width: 50%;
+  margin: 2rem auto; }
+
 :root {
   --color-primary: #2766cc;
   --color-primary-dark:#173970;
@@ -1036,7 +1041,8 @@ footer {
       border-bottom-right-radius: .5rem;
       border-top-left-radius: .2rem;
       border-top-right-radius: .2rem;
-      padding: .8rem; }
+      padding: .8rem;
+      color: var(--grey-light-1); }
   .main-list {
     list-style: none;
     margin: 1.5rem 0; }
@@ -1413,11 +1419,12 @@ footer {
 .tc-text2 {
   font-size: 1.3rem;
   color: var(--grey-dark-2);
-  text-transfrom: capitalize; }
+  text-transform: capitalize; }
 
 .tc-text3 {
   font-size: 1.3rem;
-  color: var(--grey-dark-3) text; }
+  color: var(--grey-dark-3);
+  text-transform: capitalize; }
 
 .sidebar {
   border-right: 1px solid var(--grey-dark-2);
