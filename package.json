@@ -11,7 +11,8 @@
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-use": "^17.2.1"
+    "react-use": "^17.2.1",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss src/App.css -w",
@@ -38,7 +39,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
-  }, 
+  },
   "engines": {
     "node": "13.10.1",
     "npm": "6.13.7"
